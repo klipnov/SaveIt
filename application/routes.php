@@ -37,6 +37,10 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
+Route::controller('note');
+
+Route::get('superwelcome/(:any)/(:any)','note@welcome');
+
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
