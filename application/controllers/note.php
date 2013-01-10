@@ -14,4 +14,9 @@ class Note_Controller extends Base_Controller
 			);
 		return View::make('welcome',$data);
 	}
+
+	public function action_bye()
+	{
+		echo "bye";
+	}
 }

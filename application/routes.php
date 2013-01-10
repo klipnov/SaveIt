@@ -31,15 +31,16 @@
 |		});
 |
 */
-
+/*
 Route::get('/', function()
 {
-	return View::make('home.index');
-});
+	return Route::controller('home');
+});*/
+
+Route::controller('home');
 
 Route::controller('note');
 
-Route::get('superwelcome/(:any)/(:any)','note@welcome');
 
 /*
 |--------------------------------------------------------------------------
